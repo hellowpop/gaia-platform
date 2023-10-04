@@ -1,0 +1,31 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>gaia</groupId>
+        <artifactId>gaia-parent</artifactId>
+        <version>0.9-SNAPSHOT</version>
+    </parent>
+    <artifactId>gaia-common</artifactId>
+    <name>gaia common</name>
+    <properties>
+        <javassist.version>3.29.2-GA</javassist.version>
+        <asm.version>9.4</asm.version>
+        <commons-cli.version>1.5.0</commons-cli.version>
+        <io.swagger.version>2.1.14</io.swagger.version>
+        <rxjava.version>3.1.6</rxjava.version>
+    </properties>
+    <dependencies>
+        <!-- https://mvnrepository.com/artifact/org.javassist/javassist -->
+        <dependency>
+            <groupId>org.javassist</groupId>
+            <artifactId>javassist</artifactId>
+            <version>${javassist.version}</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.ow2.asm/asm -->
+        <dependency>
+            <groupId>org.ow2.asm</groupId>
+            <artifactId>asm-util</artifactId>
+            <version>${asm.version}</version>
+        </dependency>
+    </dependencies>
+</project>

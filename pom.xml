@@ -1,8 +1,13 @@
 <project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>gaia-platform</groupId>
-    <artifactId>gaia-platform-parent</artifactId>
-    <name>gaia - parent</name>
+    <groupId>gaia</groupId>
+    <artifactId>gaia-parent</artifactId>
+    <name>gaia parent</name>
+    <modules>
+        <module>gaia-common</module>
+        <module>gaia-runtime</module>
+        <module>gaia-test</module>
+    </modules>
     <version>0.9-SNAPSHOT</version>
     <packaging>pom</packaging>
     <properties>
@@ -104,6 +109,26 @@
                 <version>${jackson-bom.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.junit.jupiter</groupId>
+                <artifactId>junit-jupiter</artifactId>
+                <version>${junit-jupiter.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.junit.jupiter</groupId>
+                <artifactId>junit-jupiter-engine</artifactId>
+                <version>${junit-jupiter.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>gaia</groupId>
+                <artifactId>gaia-common</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>gaia</groupId>
+                <artifactId>gaia-runtime</artifactId>
+                <version>${project.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
